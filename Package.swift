@@ -8,8 +8,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "Notepad",
-            path: "Sources"
+            name: "Notepad"
         )
     ]
 )
