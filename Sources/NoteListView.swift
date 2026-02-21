@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct NoteListView: View {
-    @Environment(NoteStore.self) private var noteStore
+    @EnvironmentObject private var noteStore: NoteStore
     @Binding var selectedNoteID: UUID?
 
     @State private var showingAddNote = false

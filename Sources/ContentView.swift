@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(NoteStore.self) private var noteStore
+    @EnvironmentObject private var noteStore: NoteStore
     @State private var selectedNoteID: UUID?
 
     var body: some View {

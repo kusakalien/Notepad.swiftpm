@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PageNavigationView: View {
-    @Environment(NoteStore.self) private var noteStore
+    @EnvironmentObject private var noteStore: NoteStore
     let noteID: UUID
     @Binding var currentPageIndex: Int
 

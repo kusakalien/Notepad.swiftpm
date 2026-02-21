@@ -1,11 +1,9 @@
 import Foundation
 import PencilKit
-import Observation
 
-@Observable
-final class NoteStore {
+final class NoteStore: ObservableObject {
 
-    var notes: [Note] = []
+    @Published var notes: [Note] = []
 
     private let saveKey = "notepad_notes_v1"
 

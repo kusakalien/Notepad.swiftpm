@@ -2,7 +2,7 @@ import SwiftUI
 import PencilKit
 
 struct NoteDetailView: View {
-    @Environment(NoteStore.self) private var noteStore
+    @EnvironmentObject private var noteStore: NoteStore
     let noteID: UUID
 
     @State private var currentPageIndex: Int = 0
