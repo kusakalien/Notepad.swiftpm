@@ -9,8 +9,7 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "Notepad",
-            path: ".",
-            exclude: ["README.md"]
+            path: "Sources"
         )
     ]
 )
