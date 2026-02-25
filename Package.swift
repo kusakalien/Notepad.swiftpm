@@ -9,10 +9,7 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "Notepad",
-            path: ".",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
+            path: "."
         )
     ]
 )

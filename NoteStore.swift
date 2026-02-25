@@ -1,6 +1,7 @@
 import Foundation
 import PencilKit
 
+@MainActor
 final class NoteStore: ObservableObject {
 
     @Published var notes: [Note] = []
