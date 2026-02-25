@@ -1,14 +1,16 @@
-// swift-tools-version: 5.5
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
     name: "Notepad",
     platforms: [
-        .iOS("17.0")
+        .iOS("18.0")
     ],
     targets: [
         .executableTarget(
-            name: "Notepad"
+            name: "Notepad",
+            path: ".",
+            exclude: ["README.md"]
         )
     ]
 )
