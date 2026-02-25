@@ -9,18 +9,7 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "Notepad",
-            path: ".",
-            sources: [
-                "App.swift",
-                "Models.swift",
-                "NoteStore.swift",
-                "ContentView.swift",
-                "NoteListView.swift",
-                "NoteDetailView.swift",
-                "CanvasView.swift",
-                "DrawingToolbarView.swift",
-                "PageNavigationView.swift"
-            ]
+            path: "."
         )
     ]
 )
